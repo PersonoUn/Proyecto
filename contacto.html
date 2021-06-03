@@ -37,7 +37,6 @@
 			<div class="logo"><a href="index.html"><img src="images/logoISO.jpeg"></a></div>
 		</div>
 	</div>
-	</div>
 	<div class="header">
 		<div class="container">
         <!--  header inner -->
@@ -83,32 +82,42 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="input_main">
-                       <div class="container">
-                          <form id='MyForm' name='Formulario' method='POST'><input type='hidden' name='form-name' value='Formulario' />
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Nombre" name="Nombre">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
-                            </div>
-							<div class="form-group">
-                              	<select name="Sucursal" id="Sucursal" class="email-bt">
-									<option value="Cancun">Cancún</option>
-									<option value="Merida">Mérida</option>
-									<option value="Loreto">Loreto</option>
-									<option value="Morelia">Morelia</option>
-									<option value="Zaragoza">Zaragoza</option>
-								</select>
-							</div>
-                            <div class="form-group">
-                               <textarea class="massage-bt" placeholder="Mensaje" rows="5" id="Mensaje" name="text"></textarea>
-                            </div>
-                          </form>
-                       </div> 
-                       <div class="send_btn">
-                        <button  type="button" class="main_bt"><a href="#">Enviar</a></button>
-                       </div>                   
-                    </div>
+                       <h2 align="center">Formulario</h2><br><br>
+	<form id="MyForm" name="Formulario" method="POST" data-netlify="true">
+        <label for="Nombre"><strong>1. Nombre: </strong></label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Escribe tu nombre" pattern="[a-zA-Z ]{3,40}" required autofocus> <br><br>
+		
+		<label for="Apellido"><strong>2. Apellidos: </strong></label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Escribe tus apellidos" pattern="[a-zA-Z ]{3,40}" required> <br><br>
+		
+        <label for="Sexo"><strong>3. Sexo: </strong></label>
+        <label><input type="radio" name="Sexo" value="Masculino" id="Sexo_0"> Masculino</label>
+        <label><input type="radio" name="Sexo" value="Femenino" id="Sexo_1"> Femenino</label>
+		<label><input type="radio" name="Sexo" value="Otro" id="Sexo_2"> Otro</label>
+        <br><br>
+		
+        <label for="Email"><strong>4. Email: </strong></label>
+        <input name="Email" type="email" required id="Email" placeholder="Escribe tu email"> <br><br>
+          
+        <label for="Telefono"><strong>5. Teléfono: </strong></label>
+        <input name="Telefono" type="tel" required id="Telefono" placeholder="##########"> <br><br>
+		
+		<label for="Sucursal"><strong>6. Sucursal: </strong></label>
+            <select name="Sucursal" id="Sucursal">
+            <option value="Sucursal">Sucursal</option>
+            <option value="Cancun">Cancún</option>
+            <option value="Merida">Mérida</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Morelia">Morelia</option>
+			<option value="Zaragoza">Zaragoza</option>
+			</select><br><br>
+		
+		<label for="Mensaje"><strong>7. Mensaje: </strong></label><br>
+		<textarea placeholder="Mensaje" rows="5" id="Mensaje" name="Mensaje"></textarea><br><br>
+		
+        <input type="reset" value="Reestablecer"> <input type="submit" value="Enviar">
+    </form>                 
+     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
@@ -136,19 +145,19 @@
                     <div class="col-sm-4">
                         <div class="map_icon">
                             <img src="images/map-icon.png" style="max-width: 100%;padding-left: 30px; ">
-                            <p class="email-text"><a href="#">Cancún, Q. Roo México</a></p>
+                            <p class="email-text"><a href="#">CBTIS, Cancún, Q. Roo, México</a></p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="map_icon">
                             <img src="images/call-icon.png" style="max-width: 100%;padding-left: 30px;">
-                            <p class="email-text"><a href="#">+7123654897</a></p>
+                            <p class="email-text"><a href="#">998 123 1234</a></p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="map_icon">
                             <img src="images/email-icon.png" style="max-width: 100%; padding-left: 30px;">
-                            <p class="email-text"><a href="#">demo@gmail.com</a></p>
+                            <p class="email-text"><a href="#">argote127@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
